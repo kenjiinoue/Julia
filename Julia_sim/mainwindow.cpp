@@ -25,6 +25,7 @@ void MainWindow::on_startButton_clicked()
     float bail=ui->input_bail->text().toFloat();
     float iter=ui->input_iter->text().toFloat();
     Julia * jules = new Julia(a,b,bail,iter);
+    jules->process();
 
     //ui->display->set
 }
